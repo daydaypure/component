@@ -1,6 +1,5 @@
 package com.chenz.component.sign;
 
-import com.bc.operation.dto.transfer.game.common.GameCommonConfigPrizeDto;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -34,5 +33,5 @@ public class GameCommonConfigSignPrizeDto implements Serializable {
      * fixFlag = true，则key = 周期的index
      * fixFlag = false, 则key = 连续签到天数
      */
-    private Map<List<Integer>, List<GameCommonConfigPrizeDto>> prizeMap;
+    private Map<List<Integer>, List<String>> prizeMap;
 }

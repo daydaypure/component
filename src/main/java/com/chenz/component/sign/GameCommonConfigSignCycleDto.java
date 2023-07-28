@@ -3,8 +3,6 @@ package com.chenz.component.sign;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.validation.Valid;
-import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.List;
 import java.util.Map;
@@ -22,14 +20,12 @@ public class GameCommonConfigSignCycleDto implements Serializable {
     /**
      * 周期数量
      */
-    @NotNull
     private Integer cycleQty;
 
     /**
      * 签到周期
      */
-    @NotNull
-    private @Valid GameCommonConfigSignPrizeDto prizeConfig;
+    private GameCommonConfigSignPrizeDto prizeConfig;
 
     /**
      * 签到项的其他配置
